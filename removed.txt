@@ -1,0 +1,15 @@
+
+
+\paragraph{Detailed Technical Challenges.} Indeed, there are multiple finer technical challenges one needs to address to make our vision a reality.
+
+
+(a) In a permissionless setting, the list of miners is not fixed, and not all miners are equal. How does the data owner distribute shares of his data. Clearly, giving one1 share to each miner would be susceptible to Sybil attacks?
+
+Towards that end, one option would be to look at block history and see which miner mined how many of the recent blocks. The higher the number of blocks a miner mines, the more shares it gets. Hence, the shares are roughly distributed according to the distribution of computing power. Hence, it may even be possible to obtain provable security guarantees of the following form: “if a majority of the computing power belongs to honest miners, so do a majority of the shares”.
+
+(b) How does one incentivize the miners? How do the incentives change when looking at alternative consensus mechanisms (e.g., proof of stake)? What fraction of dishonest miners can we tolerate? Further to the above point, how do we even define and incentivize “dishonest” behavior?
+
+
+
+(c) What if miners start selling the shares they hold? Indeed, if there are no repercussions to selling the shares, every rational miner could do so, thereby defeating any security guarantee the blockchain is supposed to support. More generally, blockchain-based system security cannot be analyzed in terms of semi-honest or malicious security notions; various forms of economic rationality (e.g., utility maximizer, short-term risk seeking vs. long-term risk averse) will play critical roles. We have to design mechanisms to ensure that if a miner transfer its share to someone else, they can be held accountable: either in a court of law, or, by forfeiting all the coins they hold.
+
